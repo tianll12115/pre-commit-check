@@ -13,7 +13,11 @@
       "Bash(curl -s \"https://ci.openeuler.openatom.cn/job/multiarch/job/manual-jobs/job/openeuler/job/UBSCore/api/json?tree=jobs[name]\")",
       "Bash(curl -s http://localhost:8000/api/status)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)"
     ]
   }
 }

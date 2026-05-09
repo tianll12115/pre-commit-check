@@ -53,58 +53,7 @@ jobs:
           mkdir -p docs
           cp output/*.html docs/
           cp output/*.json docs/
-
-          # 创建首页
-          cat > docs/index.md << 'EOF'
-          ---
-          title: Pre-Commit 静态检查看板
-          ---
-
-          # 📊 Pre-Commit 静态检查看板
-
-          ## 快速访问
-
-          - [📋 历史数据看板](history_dashboard.html)
-
-          ## 最近更新
-
-          EOF
-
-          # 添加更新信息
-          if [ -f docs/update_info.json ]; then
-            python3 -c "
-import json
-with open('docs/update_info.json', 'r') as f:
-    info = json.load(f)
-print(f'**最后更新**: {info[\"last_update\"]}')
-print(f'- **监控仓库**: {info[\"total_repos\"]} 个')
-print(f'- **总 PR 数**: {info[\"total_prs\"]} 条')
-print(f'- **待修复 PR**: {info[\"failed_prs\"]} 条')
-print(f'- **总违规数**: {info[\"total_violations\"]:,} 处')
-" >> docs/index.md
-          fi
-
-          cat >> docs/index.md << 'EOF'
-
-          ## 关于
-
-          本看板由 GitHub Actions 每日自动更新，监控 openEuler UBSCore 各代码仓的 pre-commit 检查结果。
-
-          ### 仓库列表
-
-          - ubs-engine
-          - ubs-comm
-          - ubs-io
-          - ubs-mem
-          - ubs-virt
-          - ubturbo
-          - ham
-          - OmniStateStore
-
-          ---
-
-          *自动生成时间: $(date '+%Y-%m-%d %H:%M:%S')*
-EOF
+          python scripts/generate_index_md.py docs/index.md docs/update_info.json
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
