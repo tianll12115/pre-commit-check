@@ -1,0 +1,119 @@
+name: Daily Pre-Commit Dashboard Update
+
+on:
+  schedule:
+    # 每天 UTC 1:00 执行（北京时间 9:00）
+    - cron: '0 1 * * *'
+
+  # 支持手动触发
+  workflow_dispatch:
+
+  # 推送到 main 分支时也触发（可选）
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write  # 需要写入权限来提交文件
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整历史
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Fetch pre-commit data
+        run: |
+          echo "开始获取 pre-commit 数据..."
+          python scripts/fetch_history.py -n 20
+        env:
+          TZ: 'Asia/Shanghai'
+
+      - name: Generate dashboard HTML
+        run: |
+          echo "生成看板..."
+          python scripts/generate_history.py
+
+      - name: Copy assets to docs folder
+        run: |
+          mkdir -p docs
+          cp output/*.html docs/
+          cp output/*.json docs/
+
+          # 创建首页
+          cat > docs/index.md << 'EOF'
+          ---
+          title: Pre-Commit 静态检查看板
+          ---
+
+          # 📊 Pre-Commit 静态检查看板
+
+          ## 快速访问
+
+          - [📋 历史数据看板](history_dashboard.html)
+
+          ## 最近更新
+
+          EOF
+
+          # 添加更新信息
+          if [ -f docs/update_info.json ]; then
+            python3 -c "
+import json
+with open('docs/update_info.json', 'r') as f:
+    info = json.load(f)
+print(f'**最后更新**: {info[\"last_update\"]}')
+print(f'- **监控仓库**: {info[\"total_repos\"]} 个')
+print(f'- **总 PR 数**: {info[\"total_prs\"]} 条')
+print(f'- **待修复 PR**: {info[\"failed_prs\"]} 条')
+print(f'- **总违规数**: {info[\"total_violations\"]:,} 处')
+" >> docs/index.md
+          fi
+
+          cat >> docs/index.md << 'EOF'
+
+          ## 关于
+
+          本看板由 GitHub Actions 每日自动更新，监控 openEuler UBSCore 各代码仓的 pre-commit 检查结果。
+
+          ### 仓库列表
+
+          - ubs-engine
+          - ubs-comm
+          - ubs-io
+          - ubs-mem
+          - ubs-virt
+          - ubturbo
+          - ham
+          - OmniStateStore
+
+          ---
+
+          *自动生成时间: $(date '+%Y-%m-%d %H:%M:%S')*
+EOF
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'chore: 更新 pre-commit 看板数据 [auto]'
+          force_orphan: false

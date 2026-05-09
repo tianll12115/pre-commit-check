@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/TL/.claude//**)",
+      "Read(//c/Users/TL/.claude/**)",
+      "Bash(cp /c/Users/TL/.claude/plugins/cache/anthropic-agent-skills/example-skills/5128e1865d67/skills/ubs-precommit-dashboard/scripts/parse_and_generate.py /d/code/pre-commit-v2/scripts/)",
+      "Bash(cp /c/Users/TL/.claude/plugins/cache/anthropic-agent-skills/example-skills/5128e1865d67/skills/ubs-precommit-dashboard/references/template.html /d/code/pre-commit-v2/templates/)",
+      "Bash(pip install *)",
+      "Bash(python *)",
+      "Bash(curl -s \"https://gitcode.com/api/v1/repos/openeuler/ubs-engine/pulls?state=closed&sort=updated&direction=desc&per_page=10\")",
+      "Bash(curl -I -s \"https://gitcode.com/api/v1/repos/openeuler/ubs-engine\")",
+      "Bash(curl -s \"https://ci.openeuler.openatom.cn/job/multiarch/job/manual-jobs/job/openeuler/job/UBSCore/job/OpenSourceCodeCheck/job/ubs-engine/api/json?tree=builds[number,id,result,actions[parameters[name,value]]]&per_page=20\")",
+      "Bash(curl -s \"https://ci.openeuler.openatom.cn/job/multiarch/job/manual-jobs/job/openeuler/job/UBSCore/api/json?tree=jobs[name]\")",
+      "Bash(curl -s http://localhost:8000/api/status)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
