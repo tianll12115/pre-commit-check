@@ -256,47 +256,47 @@
 const reposData = {
   "ubs-engine": [
     {
-      "id": "ubs-engine-1810",
-      "name": "ubs-engine-1810",
+      "id": "ubs-engine-1904",
+      "name": "ubs-engine-1904",
       "repo": "ubs-engine",
       "branch": "master",
       "pr": "#535",
       "prAuthor": "yangqi12138",
       "prSource": "interrupt",
       "trigger": "merge_request",
-      "buildNumber": 2469,
+      "buildNumber": 2563,
       "status": "fail",
       "checkType": "clang-format",
-      "violations": 11657,
-      "affectedFiles": 897,
-      "srcViolations": 5456,
-      "testViolations": 6201,
+      "violations": 11724,
+      "affectedFiles": 900,
+      "srcViolations": 5470,
+      "testViolations": 6254,
       "conclusion": "clang-format 检查失败，测试目录占 53% 违规",
-      "recommendation": "重点关注 test (6201处)、test/UT (5808处)、src (5361处)，建议统一运行 clang-format -i 批量修复",
+      "recommendation": "重点关注 test (6254处)、test/UT (5861处)、src (5375处)，建议统一运行 clang-format -i 批量修复",
       "topDirs": [
         [
           "test",
-          6201,
+          6254,
           "测试"
         ],
         [
           "test/UT",
-          5808,
+          5861,
           "UT"
         ],
         [
           "src",
-          5361,
+          5375,
           "src"
         ],
         [
           "test/UT/exclusive_executable",
-          2536,
+          2586,
           "exclusive_executable"
         ],
         [
           "src/controllers",
-          1619,
+          1607,
           "controllers"
         ]
       ],
@@ -343,32 +343,32 @@ const reposData = {
         ]
       ],
       "samples": [
-        "test/UT/ras/test_ubse_ras_module.cpp:13:1: code should be clang-formatted",
-        "test/UT/ras/test_ubse_ras_module.cpp:50:2: code should be clang-formatted",
+        "test/UT/election/test_ubse_election_pkt_handler.h:35:2: code should be clang-formatted",
         "src/addons/rmrs/mem_fragment/internode_strategy/mempool_borrow_module.cpp:443:115: code should be clang-formatted",
         "src/addons/rmrs/mem_fragment/internode_strategy/mempool_borrow_module.cpp:444:92: code should be clang-formatted",
-        "src/addons/rmrs/mem_fragment/internode_strategy/mempool_borrow_module.cpp:1266:98: code should be clang-formatted"
+        "src/addons/rmrs/mem_fragment/internode_strategy/mempool_borrow_module.cpp:1266:98: code should be clang-formatted",
+        "src/addons/rmrs/mem_fragment/internode_strategy/mempool_borrow_module.cpp:1570:99: code should be clang-formatted"
       ],
       "merged_at": ""
     },
     {
-      "id": "ubs-engine-1807",
-      "name": "ubs-engine-1807",
+      "id": "ubs-engine-1902",
+      "name": "ubs-engine-1902",
       "repo": "ubs-engine",
       "branch": "master",
-      "pr": "#541",
-      "prAuthor": "youngb_",
-      "prSource": "master",
+      "pr": "#569",
+      "prAuthor": "subceux",
+      "prSource": "ljq-dev",
       "trigger": "merge_request",
-      "buildNumber": 2466,
+      "buildNumber": 2561,
       "status": "fail",
       "checkType": "clang-format",
-      "violations": 11612,
-      "affectedFiles": 891,
-      "srcViolations": 5424,
+      "violations": 11745,
+      "affectedFiles": 895,
+      "srcViolations": 5557,
       "testViolations": 6188,
       "conclusion": "clang-format 检查失败，测试目录占 53% 违规",
-      "recommendation": "重点关注 test (6188处)、test/UT (5795处)、src (5329处)，建议统一运行 clang-format -i 批量修复",
+      "recommendation": "重点关注 test (6188处)、test/UT (5795处)、src (5462处)，建议统一运行 clang-format -i 批量修复",
       "topDirs": [
         [
           "test",
@@ -382,7 +382,7 @@ const reposData = {
         ],
         [
           "src",
-          5329,
+          5462,
           "src"
         ],
         [
@@ -392,7 +392,7 @@ const reposData = {
         ],
         [
           "src/controllers",
-          1601,
+          1607,
           "controllers"
         ]
       ],
@@ -434,243 +434,74 @@ const reposData = {
           163
         ],
         [
-          "src/include/ubse_error.h",
+          "src/framework/serde/ubse_serial_util.h",
           155
         ]
       ],
       "samples": [
-        "src/framework/ha/message/ubse_election_reply_pkt_simpo.h:52:2: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:188:101: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:198:37: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:203:2: code should be clang-formatted",
-        "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:13:1: code should be clang-formatted"
+        "test/UT/exclusive_executable/rmrs/util/test_mp_json_util.cpp:40:3: code should be clang-formatted",
+        "test/UT/exclusive_executable/rmrs/util/test_mp_json_util.cpp:123:47: code should be clang-formatted",
+        "test/UT/exclusive_executable/rmrs/util/test_mp_json_util.cpp:138:47: code should be clang-formatted",
+        "test/UT/exclusive_executable/rmrs/util/test_mp_json_util.cpp:170:46: code should be clang-formatted",
+        "test/UT/exclusive_executable/rmrs/util/test_mp_json_util.cpp:170:69: code should be clang-formatted"
       ],
       "merged_at": ""
     },
     {
-      "id": "ubs-engine-1806",
-      "name": "ubs-engine-1806",
+      "id": "ubs-engine-1901",
+      "name": "ubs-engine-1901",
       "repo": "ubs-engine",
-      "branch": "master",
-      "pr": "#562",
-      "prAuthor": "hellsark",
-      "prSource": "master",
-      "trigger": "merge_request",
-      "buildNumber": 2465,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 11626,
-      "affectedFiles": 891,
-      "srcViolations": 5441,
-      "testViolations": 6185,
-      "conclusion": "clang-format 检查失败，测试目录占 53% 违规",
-      "recommendation": "重点关注 test (6185处)、test/UT (5792处)、src (5346处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "test",
-          6185,
-          "测试"
-        ],
-        [
-          "test/UT",
-          5792,
-          "UT"
-        ],
-        [
-          "src",
-          5346,
-          "src"
-        ],
-        [
-          "test/UT/exclusive_executable",
-          2536,
-          "exclusive_executable"
-        ],
-        [
-          "src/controllers",
-          1619,
-          "controllers"
-        ]
-      ],
-      "topFiles": [
-        [
-          "test/UT/cli/test_ubse_cli_mem_cmd_reg.cpp",
-          374
-        ],
-        [
-          "test/FUZZ/mem/ubse_mem_fuzz.cpp",
-          312
-        ],
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/migrate_strategy_test.cpp",
-          307
-        ],
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/bottleneck_strategy_test.cpp",
-          242
-        ],
-        [
-          "test/UT/node_controller/test_ubse_node_controller_util.cpp",
-          225
-        ],
-        [
-          "src/controllers/node/ubse_node_controller_master.cpp",
-          195
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/fault_management/test_fault_node_module.cpp",
-          192
-        ],
-        [
-          "test/UT/cli/test_ubse_cli_reg.cpp",
-          180
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/event/test_event_handler.cpp",
-          163
-        ],
-        [
-          "src/include/ubse_error.h",
-          155
-        ]
-      ],
-      "samples": [
-        "src/framework/ha/message/ubse_election_reply_pkt_simpo.h:52:2: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:188:101: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:198:37: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:203:2: code should be clang-formatted",
-        "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:13:1: code should be clang-formatted"
-      ],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-engine-1804",
-      "name": "ubs-engine-1804",
-      "repo": "ubs-engine",
-      "branch": "master",
-      "pr": "#561",
+      "branch": "br_UnifiedBus",
+      "pr": "#567",
       "prAuthor": "lisong_hw",
-      "prSource": "master",
-      "trigger": "merge_request",
-      "buildNumber": 2462,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 3771,
-      "affectedFiles": 330,
-      "srcViolations": 1211,
-      "testViolations": 2560,
-      "conclusion": "clang-format 检查失败，测试目录占 68% 违规",
-      "recommendation": "重点关注 test (2560处)、test/UT (2558处)、test/UT/exclusive_executable (2536处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "test",
-          2560,
-          "测试"
-        ],
-        [
-          "test/UT",
-          2558,
-          "UT"
-        ],
-        [
-          "test/UT/exclusive_executable",
-          2536,
-          "exclusive_executable"
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs",
-          1349,
-          "rmrs"
-        ],
-        [
-          "src",
-          1211,
-          "src"
-        ]
-      ],
-      "topFiles": [
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/migrate_strategy_test.cpp",
-          307
-        ],
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/bottleneck_strategy_test.cpp",
-          242
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/fault_management/test_fault_node_module.cpp",
-          192
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/event/test_event_handler.cpp",
-          163
-        ],
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/mem_borrow_test.cpp",
-          141
-        ],
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/ucache_master_test.cpp",
-          132
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/intranode_strategy/test_mempool_migrate_module.cpp",
-          132
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/smap/test_smap_module.cpp",
-          117
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/executor/test_mem_borrow_executor.cpp",
-          103
-        ],
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/borrow_action_test.cpp",
-          88
-        ]
-      ],
-      "samples": [
-        "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:13:1: code should be clang-formatted",
-        "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:27:15: code should be clang-formatted",
-        "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:27:16: code should be clang-formatted",
-        "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:42:15: code should be clang-formatted",
-        "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:42:16: code should be clang-formatted"
-      ],
+      "prSource": "panic-rr",
+      "trigger": "note",
+      "buildNumber": 2560,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
       "merged_at": ""
     },
     {
-      "id": "ubs-engine-1802",
-      "name": "ubs-engine-1802",
+      "id": "ubs-engine-1899",
+      "name": "ubs-engine-1899",
       "repo": "ubs-engine",
       "branch": "master",
       "pr": "#543",
       "prAuthor": "qlotte",
       "prSource": "threadnode",
-      "trigger": "merge_request",
-      "buildNumber": 2461,
+      "trigger": "note",
+      "buildNumber": 2558,
       "status": "fail",
       "checkType": "clang-format",
-      "violations": 11622,
-      "affectedFiles": 891,
-      "srcViolations": 5437,
-      "testViolations": 6185,
+      "violations": 11616,
+      "affectedFiles": 892,
+      "srcViolations": 5428,
+      "testViolations": 6188,
       "conclusion": "clang-format 检查失败，测试目录占 53% 违规",
-      "recommendation": "重点关注 test (6185处)、test/UT (5792处)、src (5342处)，建议统一运行 clang-format -i 批量修复",
+      "recommendation": "重点关注 test (6188处)、test/UT (5795处)、src (5333处)，建议统一运行 clang-format -i 批量修复",
       "topDirs": [
         [
           "test",
-          6185,
+          6188,
           "测试"
         ],
         [
           "test/UT",
-          5792,
+          5795,
           "UT"
         ],
         [
           "src",
-          5342,
+          5333,
           "src"
         ],
         [
@@ -680,7 +511,7 @@ const reposData = {
         ],
         [
           "src/controllers",
-          1615,
+          1603,
           "controllers"
         ]
       ],
@@ -736,83 +567,37 @@ const reposData = {
       "merged_at": ""
     },
     {
-      "id": "ubs-engine-1795",
-      "name": "ubs-engine-1795",
-      "repo": "ubs-engine",
-      "branch": "br_UnifiedBus",
-      "pr": "#560",
-      "prAuthor": "fanmingzhan",
-      "prSource": "br_UnifiedBus_mer",
-      "trigger": "merge_request",
-      "buildNumber": 2454,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-engine-1794",
-      "name": "ubs-engine-1794",
-      "repo": "ubs-engine",
-      "branch": "br_UnifiedBus",
-      "pr": "#534",
-      "prAuthor": "yangqi12138",
-      "prSource": "fastRR_",
-      "trigger": "merge_request",
-      "buildNumber": 2453,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-engine-1792",
-      "name": "ubs-engine-1792",
+      "id": "ubs-engine-1897",
+      "name": "ubs-engine-1897",
       "repo": "ubs-engine",
       "branch": "master",
-      "pr": "#559",
-      "prAuthor": "bao-xiu",
-      "prSource": "fragment-fault-handling-opt",
+      "pr": "#568",
+      "prAuthor": "youngb_",
+      "prSource": "mf",
       "trigger": "merge_request",
-      "buildNumber": 2451,
+      "buildNumber": 2556,
       "status": "fail",
       "checkType": "clang-format",
-      "violations": 11645,
-      "affectedFiles": 892,
-      "srcViolations": 5460,
-      "testViolations": 6185,
+      "violations": 11646,
+      "affectedFiles": 893,
+      "srcViolations": 5451,
+      "testViolations": 6195,
       "conclusion": "clang-format 检查失败，测试目录占 53% 违规",
-      "recommendation": "重点关注 test (6185处)、test/UT (5792处)、src (5365处)，建议统一运行 clang-format -i 批量修复",
+      "recommendation": "重点关注 test (6195处)、test/UT (5802处)、src (5356处)，建议统一运行 clang-format -i 批量修复",
       "topDirs": [
         [
           "test",
-          6185,
+          6195,
           "测试"
         ],
         [
           "test/UT",
-          5792,
+          5802,
           "UT"
         ],
         [
           "src",
-          5365,
+          5356,
           "src"
         ],
         [
@@ -822,7 +607,7 @@ const reposData = {
         ],
         [
           "src/controllers",
-          1619,
+          1620,
           "controllers"
         ]
       ],
@@ -864,37 +649,37 @@ const reposData = {
           163
         ],
         [
-          "src/include/ubse_error.h",
-          155
+          "src/framework/serde/ubse_serial_util.h",
+          161
         ]
       ],
       "samples": [
-        "src/framework/ha/message/ubse_election_reply_pkt_simpo.h:52:2: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:188:101: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:198:37: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:203:2: code should be clang-formatted",
-        "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:13:1: code should be clang-formatted"
+        "test/UT/exclusive_executable/rmrs/util/test_mp_json_util.cpp:40:3: code should be clang-formatted",
+        "test/UT/exclusive_executable/rmrs/util/test_mp_json_util.cpp:123:47: code should be clang-formatted",
+        "test/UT/exclusive_executable/rmrs/util/test_mp_json_util.cpp:138:47: code should be clang-formatted",
+        "test/UT/exclusive_executable/rmrs/util/test_mp_json_util.cpp:170:46: code should be clang-formatted",
+        "test/UT/exclusive_executable/rmrs/util/test_mp_json_util.cpp:170:69: code should be clang-formatted"
       ],
       "merged_at": ""
     },
     {
-      "id": "ubs-engine-1791",
-      "name": "ubs-engine-1791",
+      "id": "ubs-engine-1895",
+      "name": "ubs-engine-1895",
       "repo": "ubs-engine",
       "branch": "master",
-      "pr": "#558",
-      "prAuthor": "yutao88",
+      "pr": "#562",
+      "prAuthor": "hellsark",
       "prSource": "master",
-      "trigger": "merge_request",
-      "buildNumber": 2450,
+      "trigger": "note",
+      "buildNumber": 2554,
       "status": "fail",
       "checkType": "clang-format",
-      "violations": 11626,
-      "affectedFiles": 891,
-      "srcViolations": 5441,
+      "violations": 11632,
+      "affectedFiles": 892,
+      "srcViolations": 5447,
       "testViolations": 6185,
       "conclusion": "clang-format 检查失败，测试目录占 53% 违规",
-      "recommendation": "重点关注 test (6185处)、test/UT (5792处)、src (5346处)，建议统一运行 clang-format -i 批量修复",
+      "recommendation": "重点关注 test (6185处)、test/UT (5792处)、src (5352处)，建议统一运行 clang-format -i 批量修复",
       "topDirs": [
         [
           "test",
@@ -904,244 +689,6 @@ const reposData = {
         [
           "test/UT",
           5792,
-          "UT"
-        ],
-        [
-          "src",
-          5346,
-          "src"
-        ],
-        [
-          "test/UT/exclusive_executable",
-          2536,
-          "exclusive_executable"
-        ],
-        [
-          "src/controllers",
-          1619,
-          "controllers"
-        ]
-      ],
-      "topFiles": [
-        [
-          "test/UT/cli/test_ubse_cli_mem_cmd_reg.cpp",
-          374
-        ],
-        [
-          "test/FUZZ/mem/ubse_mem_fuzz.cpp",
-          312
-        ],
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/migrate_strategy_test.cpp",
-          307
-        ],
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/bottleneck_strategy_test.cpp",
-          242
-        ],
-        [
-          "test/UT/node_controller/test_ubse_node_controller_util.cpp",
-          225
-        ],
-        [
-          "src/controllers/node/ubse_node_controller_master.cpp",
-          195
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/fault_management/test_fault_node_module.cpp",
-          192
-        ],
-        [
-          "test/UT/cli/test_ubse_cli_reg.cpp",
-          180
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/event/test_event_handler.cpp",
-          163
-        ],
-        [
-          "src/include/ubse_error.h",
-          155
-        ]
-      ],
-      "samples": [
-        "src/framework/ha/message/ubse_election_reply_pkt_simpo.h:52:2: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:188:101: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:198:37: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:203:2: code should be clang-formatted",
-        "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:13:1: code should be clang-formatted"
-      ],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-engine-1790",
-      "name": "ubs-engine-1790",
-      "repo": "ubs-engine",
-      "branch": "br_UnifiedBus",
-      "pr": "#557",
-      "prAuthor": "ccbin1",
-      "prSource": "comv2-newbr",
-      "trigger": "merge_request",
-      "buildNumber": 2449,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-engine-1789",
-      "name": "ubs-engine-1789",
-      "repo": "ubs-engine",
-      "branch": "br_UnifiedBus",
-      "pr": "#556",
-      "prAuthor": "gongwang1",
-      "prSource": "br_UnifiedBus",
-      "trigger": "note",
-      "buildNumber": 2448,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-engine-1787",
-      "name": "ubs-engine-1787",
-      "repo": "ubs-engine",
-      "branch": "master",
-      "pr": "#555",
-      "prAuthor": "lisong_hw",
-      "prSource": "cpp-httplib-fix",
-      "trigger": "merge_request",
-      "buildNumber": 2446,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 12594,
-      "affectedFiles": 976,
-      "srcViolations": 5441,
-      "testViolations": 7153,
-      "conclusion": "clang-format 检查失败，测试目录占 57% 违规",
-      "recommendation": "重点关注 test (7153处)、test/UT (6428处)、src (5346处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "test",
-          7153,
-          "测试"
-        ],
-        [
-          "test/UT",
-          6428,
-          "UT"
-        ],
-        [
-          "src",
-          5346,
-          "src"
-        ],
-        [
-          "test/UT/exclusive_executable",
-          3172,
-          "exclusive_executable"
-        ],
-        [
-          "src/controllers",
-          1619,
-          "controllers"
-        ]
-      ],
-      "topFiles": [
-        [
-          "test/UT/cli/test_ubse_cli_mem_cmd_reg.cpp",
-          374
-        ],
-        [
-          "test/FUZZ/mem/ubse_mem_fuzz.cpp",
-          312
-        ],
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/migrate_strategy_test.cpp",
-          307
-        ],
-        [
-          "test/UT/exclusive_executable/ucache/ucache_master/bottleneck_strategy_test.cpp",
-          242
-        ],
-        [
-          "test/UT/node_controller/test_ubse_node_controller_util.cpp",
-          225
-        ],
-        [
-          "src/controllers/node/ubse_node_controller_master.cpp",
-          195
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/fault_management/test_fault_node_module.cpp",
-          192
-        ],
-        [
-          "test/UT/cli/test_ubse_cli_reg.cpp",
-          180
-        ],
-        [
-          "test/UT/exclusive_executable/rmrs/event/test_event_handler.cpp",
-          163
-        ],
-        [
-          "src/include/ubse_error.h",
-          155
-        ]
-      ],
-      "samples": [
-        "src/framework/ha/message/ubse_election_reply_pkt_simpo.h:52:2: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:188:101: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:198:37: code should be clang-formatted",
-        "src/framework/ha/role/ubse_election_role_mgr.cpp:203:2: code should be clang-formatted",
-        "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:13:1: code should be clang-formatted"
-      ],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-engine-1786",
-      "name": "ubs-engine-1786",
-      "repo": "ubs-engine",
-      "branch": "master",
-      "pr": "#554",
-      "prAuthor": "hw-sgl",
-      "prSource": "DTS0400",
-      "trigger": "merge_request",
-      "buildNumber": 2445,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 12600,
-      "affectedFiles": 977,
-      "srcViolations": 5447,
-      "testViolations": 7153,
-      "conclusion": "clang-format 检查失败，测试目录占 57% 违规",
-      "recommendation": "重点关注 test (7153处)、test/UT (6428处)、src (5352处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "test",
-          7153,
-          "测试"
-        ],
-        [
-          "test/UT",
-          6428,
           "UT"
         ],
         [
@@ -1151,7 +698,7 @@ const reposData = {
         ],
         [
           "test/UT/exclusive_executable",
-          3172,
+          2536,
           "exclusive_executable"
         ],
         [
@@ -1210,9 +757,193 @@ const reposData = {
         "test/UT/exclusive_executable/ucache/common/GetJson_test.cpp:13:1: code should be clang-formatted"
       ],
       "merged_at": ""
+    },
+    {
+      "id": "ubs-engine-1894",
+      "name": "ubs-engine-1894",
+      "repo": "ubs-engine",
+      "branch": "br_UnifiedBus",
+      "pr": "#563",
+      "prAuthor": "Zzyiiii",
+      "prSource": "br_UnifiedBus",
+      "trigger": "merge_request",
+      "buildNumber": 2553,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-engine-1891",
+      "name": "ubs-engine-1891",
+      "repo": "ubs-engine",
+      "branch": "br_UnifiedBus",
+      "pr": "#566",
+      "prAuthor": "ccbin1",
+      "prSource": "ssu-alloc",
+      "trigger": "note",
+      "buildNumber": 2550,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-engine-1887",
+      "name": "ubs-engine-1887",
+      "repo": "ubs-engine",
+      "branch": "br_npu_dev_20260330",
+      "pr": "#538",
+      "prAuthor": "pluto_wangjie",
+      "prSource": "wangjie_br_npu_dev_20260330",
+      "trigger": "merge_request",
+      "buildNumber": 2546,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-engine-1886",
+      "name": "ubs-engine-1886",
+      "repo": "ubs-engine",
+      "branch": "master",
+      "pr": "#561",
+      "prAuthor": "lisong_hw",
+      "prSource": "master",
+      "trigger": "merge_request",
+      "buildNumber": 2544,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-engine-1885",
+      "name": "ubs-engine-1885",
+      "repo": "ubs-engine",
+      "branch": "br_UnifiedBus",
+      "pr": "#560",
+      "prAuthor": "fanmingzhan",
+      "prSource": "br_UnifiedBus_mer",
+      "trigger": "note",
+      "buildNumber": 2545,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
     }
   ],
   "ubs-comm": [
+    {
+      "id": "ubs-comm-1833",
+      "name": "ubs-comm-1833",
+      "repo": "ubs-comm",
+      "branch": "master",
+      "pr": "#574",
+      "prAuthor": "gcw_GyK5eQlb",
+      "prSource": "thread_pool_dev_0508",
+      "trigger": "merge_request",
+      "buildNumber": 2058,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-comm-1832",
+      "name": "ubs-comm-1832",
+      "repo": "ubs-comm",
+      "branch": "master",
+      "pr": "#578",
+      "prAuthor": "liu1103xwxw",
+      "prSource": "develop_liuqzh_commit",
+      "trigger": "merge_request",
+      "buildNumber": 2057,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-comm-1831",
+      "name": "ubs-comm-1831",
+      "repo": "ubs-comm",
+      "branch": "br_refactor_20260530",
+      "pr": "#575",
+      "prAuthor": "dawnllg",
+      "prSource": "br_refactor_20260530",
+      "trigger": "merge_request",
+      "buildNumber": 2056,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
     {
       "id": "ubs-comm-1830",
       "name": "ubs-comm-1830",
@@ -1283,29 +1014,6 @@ const reposData = {
       "merged_at": ""
     },
     {
-      "id": "ubs-comm-1827",
-      "name": "ubs-comm-1827",
-      "repo": "ubs-comm",
-      "branch": "br_refactor_20260530",
-      "pr": "#575",
-      "prAuthor": "dawnllg",
-      "prSource": "br_refactor_20260530",
-      "trigger": "merge_request",
-      "buildNumber": 2052,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
-    },
-    {
       "id": "ubs-comm-1824",
       "name": "ubs-comm-1824",
       "repo": "ubs-comm",
@@ -1315,29 +1023,6 @@ const reposData = {
       "prSource": "master",
       "trigger": "merge_request",
       "buildNumber": 2049,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-comm-1817",
-      "name": "ubs-comm-1817",
-      "repo": "ubs-comm",
-      "branch": "master",
-      "pr": "#574",
-      "prAuthor": "gcw_GyK5eQlb",
-      "prSource": "thread_pool_dev_0508",
-      "trigger": "merge_request",
-      "buildNumber": 2042,
       "status": "skip",
       "checkType": "未配置 pre-commit",
       "violations": 0,
@@ -1419,78 +1104,101 @@ const reposData = {
       "topFiles": [],
       "samples": [],
       "merged_at": ""
-    },
-    {
-      "id": "ubs-comm-1808",
-      "name": "ubs-comm-1808",
-      "repo": "ubs-comm",
-      "branch": "br_BeiMing.26.0.RC1",
-      "pr": "#564",
-      "prAuthor": "wang-shun1999",
-      "prSource": "set_cache_enable",
-      "trigger": "merge_request",
-      "buildNumber": 2033,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-comm-1807",
-      "name": "ubs-comm-1807",
-      "repo": "ubs-comm",
-      "branch": "br_refactor_20260530",
-      "pr": "#566",
-      "prAuthor": "minibao",
-      "prSource": "br_refactor",
-      "trigger": "merge_request",
-      "buildNumber": 2032,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-comm-1806",
-      "name": "ubs-comm-1806",
-      "repo": "ubs-comm",
-      "branch": "openEuler-24.03-LTS-SP3",
-      "pr": "#569",
-      "prAuthor": "wang-shun1999",
-      "prSource": "enable_cache_sp3",
-      "trigger": "note",
-      "buildNumber": 2031,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
     }
   ],
   "ubs-io": [
+    {
+      "id": "ubs-io-152",
+      "name": "ubs-io-152",
+      "repo": "ubs-io",
+      "branch": "develop_memStore",
+      "pr": "#116",
+      "prAuthor": "yangchangjie12138",
+      "prSource": "develop_add_cm_test",
+      "trigger": "note",
+      "buildNumber": 344,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-io-150",
+      "name": "ubs-io-150",
+      "repo": "ubs-io",
+      "branch": "develop",
+      "pr": "#115",
+      "prAuthor": "zhangjialee",
+      "prSource": "dfc-docs",
+      "trigger": "merge_request",
+      "buildNumber": 342,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-io-146",
+      "name": "ubs-io-146",
+      "repo": "ubs-io",
+      "branch": "develop_memStore",
+      "pr": "#114",
+      "prAuthor": "yangchangjie12138",
+      "prSource": "develop_cluster_manger",
+      "trigger": "note",
+      "buildNumber": 338,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-io-144",
+      "name": "ubs-io-144",
+      "repo": "ubs-io",
+      "branch": "develop",
+      "pr": "#113",
+      "prAuthor": "henian_Ni",
+      "prSource": "develop_0511",
+      "trigger": "merge_request",
+      "buildNumber": 336,
+      "status": "skip",
+      "checkType": "未配置 pre-commit",
+      "violations": 0,
+      "affectedFiles": 0,
+      "srcViolations": 0,
+      "testViolations": 0,
+      "conclusion": "仓库未配置 pre-commit 检查",
+      "recommendation": "",
+      "topDirs": [],
+      "topFiles": [],
+      "samples": [],
+      "merged_at": ""
+    },
     {
       "id": "ubs-io-142",
       "name": "ubs-io-142",
@@ -1697,55 +1405,105 @@ const reposData = {
       "topFiles": [],
       "samples": [],
       "merged_at": ""
-    },
-    {
-      "id": "ubs-io-125",
-      "name": "ubs-io-125",
-      "repo": "ubs-io",
-      "branch": "develop",
-      "pr": "#104",
-      "prAuthor": "florencxxe",
-      "prSource": "cli0507",
-      "trigger": "note",
-      "buildNumber": 317,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-io-118",
-      "name": "ubs-io-118",
-      "repo": "ubs-io",
-      "branch": "develop_memStore",
-      "pr": "#103",
-      "prAuthor": "yyang728",
-      "prSource": "develop_memStore",
-      "trigger": "note",
-      "buildNumber": 310,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
     }
   ],
   "ubs-mem": [
+    {
+      "id": "ubs-mem-41",
+      "name": "ubs-mem-41",
+      "repo": "ubs-mem",
+      "branch": "master",
+      "pr": "#42",
+      "prAuthor": "yangqi12138",
+      "prSource": "br-delete",
+      "trigger": "merge_request",
+      "buildNumber": 98,
+      "status": "fail",
+      "checkType": "clang-format",
+      "violations": 8871,
+      "affectedFiles": 264,
+      "srcViolations": 6750,
+      "testViolations": 2121,
+      "conclusion": "clang-format 检查失败，src 模块违规较多",
+      "recommendation": "重点关注 src (6653处)、test (2121处)、test/mxm-unit-tests (2017处)，建议统一运行 clang-format -i 批量修复",
+      "topDirs": [
+        [
+          "src",
+          6653,
+          "src"
+        ],
+        [
+          "test",
+          2121,
+          "测试"
+        ],
+        [
+          "test/mxm-unit-tests",
+          2017,
+          "mxm-unit-tests"
+        ],
+        [
+          "src/communication",
+          1454,
+          "communication"
+        ],
+        [
+          "src/communication/adapter",
+          1330,
+          "适配"
+        ]
+      ],
+      "topFiles": [
+        [
+          "src/communication/adapter/mxm_com_def.cpp",
+          376
+        ],
+        [
+          "src/mxm_shm/ipc_handler.cpp",
+          306
+        ],
+        [
+          "src/mxm_message/mxm_msg.h",
+          282
+        ],
+        [
+          "src/communication/adapter/mxm_com_engine.cpp",
+          276
+        ],
+        [
+          "test/mxm-unit-tests/app_testcase/mxm_shm_lib/mxmem_shmem_test.cpp",
+          256
+        ],
+        [
+          "src/communication/adapter/mxm_com_def.h",
+          242
+        ],
+        [
+          "test/mxm-unit-tests/mxm_message/mxm_message_test.cpp",
+          212
+        ],
+        [
+          "src/mxm_shm/ipc_server.cpp",
+          209
+        ],
+        [
+          "test/mxm-unit-tests/daemon/daemon_init_test.cpp",
+          209
+        ],
+        [
+          "src/zen_discovery/zen_discovery.cpp",
+          178
+        ]
+      ],
+      "samples": [
+        "test/mxm-unit-tests/zen_discovery/election_module_test.cpp:4:1: code should be clang-formatted",
+        "test/mxm-unit-tests/zen_discovery/election_module_test.cpp:116:70: code should be clang-formatted",
+        "test/mxm-unit-tests/zen_discovery/election_module_test.cpp:117:43: code should be clang-formatted",
+        "test/mxm-unit-tests/zen_discovery/election_module_test.cpp:117:44: code should be clang-formatted",
+        "test/mxm-unit-tests/zen_discovery/election_module_test.cpp:117:54: code should be clang-formatted"
+      ],
+      "merged_at": ""
+    },
     {
       "id": "ubs-mem-39",
       "name": "ubs-mem-39",
@@ -2029,59 +1787,36 @@ const reposData = {
       "topFiles": [],
       "samples": [],
       "merged_at": ""
-    },
-    {
-      "id": "ubs-mem-16",
-      "name": "ubs-mem-16",
-      "repo": "ubs-mem",
-      "branch": "master",
-      "pr": "#32",
-      "prAuthor": "whytao",
-      "prSource": "master",
-      "trigger": "note",
-      "buildNumber": 76,
-      "status": "skip",
-      "checkType": "未配置 pre-commit",
-      "violations": 0,
-      "affectedFiles": 0,
-      "srcViolations": 0,
-      "testViolations": 0,
-      "conclusion": "仓库未配置 pre-commit 检查",
-      "recommendation": "",
-      "topDirs": [],
-      "topFiles": [],
-      "samples": [],
-      "merged_at": ""
     }
   ],
   "ubs-virt": [
     {
-      "id": "ubs-virt-188",
-      "name": "ubs-virt-188",
+      "id": "ubs-virt-201",
+      "name": "ubs-virt-201",
       "repo": "ubs-virt",
       "branch": "master",
-      "pr": "#180",
-      "prAuthor": "Sky_miner",
-      "prSource": "main-master",
+      "pr": "#167",
+      "prAuthor": "miaoyxm",
+      "prSource": "master",
       "trigger": "merge_request",
-      "buildNumber": 992,
+      "buildNumber": 1005,
       "status": "fail",
       "checkType": "clang-format",
-      "violations": 1774,
-      "affectedFiles": 157,
-      "srcViolations": 1774,
+      "violations": 1811,
+      "affectedFiles": 158,
+      "srcViolations": 1811,
       "testViolations": 0,
       "conclusion": "clang-format 检查失败，ubs-virt-enpu 模块违规较多",
-      "recommendation": "重点关注 ubs-virt-enpu (971处)、ubs-virt-enpu/vcann-rt (971处)、virt-optimizer (761处)，建议统一运行 clang-format -i 批量修复",
+      "recommendation": "重点关注 ubs-virt-enpu (1008处)、ubs-virt-enpu/vcann-rt (1008处)、virt-optimizer (761处)，建议统一运行 clang-format -i 批量修复",
       "topDirs": [
         [
           "ubs-virt-enpu",
-          971,
+          1008,
           "ubs-virt-enpu"
         ],
         [
           "ubs-virt-enpu/vcann-rt",
-          971,
+          1008,
           "vcann-rt"
         ],
         [
@@ -2096,7 +1831,7 @@ const reposData = {
         ],
         [
           "ubs-virt-enpu/vcann-rt/test",
-          512,
+          514,
           "测试"
         ]
       ],
@@ -2126,11 +1861,11 @@ const reposData = {
           54
         ],
         [
-          "ubs-virt-enpu/vcann-rt/src/ascend/kernel.c",
-          46
+          "ubs-virt-enpu/vcann-rt/test/testcase/npu_manager_test.cpp",
+          47
         ],
         [
-          "ubs-virt-enpu/vcann-rt/test/testcase/npu_manager_test.cpp",
+          "ubs-virt-enpu/vcann-rt/src/ascend/kernel.c",
           46
         ],
         [
@@ -2143,11 +1878,299 @@ const reposData = {
         ]
       ],
       "samples": [
-        "virt-optimizer/ebpf/src/optimizer/tuner/cpu_topo_tuner.cpp:14:1: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/cpu_topo_tuner.cpp:68:43: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/cpu_topo_tuner.cpp:68:44: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/cpu_topo_tuner.cpp:93:70: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/cpu_topo_tuner.cpp:109:45: code should be clang-formatted"
+        "virt-optimizer/ebpf/src/optimizer/tuner/cluster_topo_tuner.h:31:7: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:32:32: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:39:48: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:39:49: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:42:50: code should be clang-formatted"
+      ],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-virt-200",
+      "name": "ubs-virt-200",
+      "repo": "ubs-virt",
+      "branch": "master",
+      "pr": "#133",
+      "prAuthor": "julyfish",
+      "prSource": "my-personal-branch",
+      "trigger": "merge_request",
+      "buildNumber": 1004,
+      "status": "fail",
+      "checkType": "clang-format",
+      "violations": 1945,
+      "affectedFiles": 158,
+      "srcViolations": 1945,
+      "testViolations": 0,
+      "conclusion": "clang-format 检查失败，ubs-virt-enpu 模块违规较多",
+      "recommendation": "重点关注 ubs-virt-enpu (1142处)、ubs-virt-enpu/vcann-rt (1142处)、virt-optimizer (761处)，建议统一运行 clang-format -i 批量修复",
+      "topDirs": [
+        [
+          "ubs-virt-enpu",
+          1142,
+          "ubs-virt-enpu"
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt",
+          1142,
+          "vcann-rt"
+        ],
+        [
+          "virt-optimizer",
+          761,
+          "virt-optimizer"
+        ],
+        [
+          "virt-optimizer/ebpf",
+          761,
+          "ebpf"
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src",
+          587,
+          "src"
+        ]
+      ],
+      "topFiles": [
+        [
+          "ubs-virt-enpu/vcann-rt/test/stub/runtime/rt.h",
+          176
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/test/testcase/utils/hash_map_test.cpp",
+          144
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/log.c",
+          143
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/include/common.h",
+          76
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/core_limiter.c",
+          67
+        ],
+        [
+          "virt-optimizer/ebpf/src/client/main.cpp",
+          54
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/test/testcase/log_test.cpp",
+          49
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/test/testcase/npu_manager_test.cpp",
+          47
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/ascend/kernel.c",
+          46
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/include/log.h",
+          45
+        ]
+      ],
+      "samples": [
+        "virt-optimizer/ebpf/src/optimizer/tuner/cluster_topo_tuner.h:31:7: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:32:32: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:39:48: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:39:49: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:42:50: code should be clang-formatted"
+      ],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-virt-194",
+      "name": "ubs-virt-194",
+      "repo": "ubs-virt",
+      "branch": "master",
+      "pr": "#180",
+      "prAuthor": "Sky_miner",
+      "prSource": "main-master",
+      "trigger": "note",
+      "buildNumber": 998,
+      "status": "fail",
+      "checkType": "clang-format",
+      "violations": 1811,
+      "affectedFiles": 158,
+      "srcViolations": 1811,
+      "testViolations": 0,
+      "conclusion": "clang-format 检查失败，ubs-virt-enpu 模块违规较多",
+      "recommendation": "重点关注 ubs-virt-enpu (1008处)、ubs-virt-enpu/vcann-rt (1008处)、virt-optimizer (761处)，建议统一运行 clang-format -i 批量修复",
+      "topDirs": [
+        [
+          "ubs-virt-enpu",
+          1008,
+          "ubs-virt-enpu"
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt",
+          1008,
+          "vcann-rt"
+        ],
+        [
+          "virt-optimizer",
+          761,
+          "virt-optimizer"
+        ],
+        [
+          "virt-optimizer/ebpf",
+          761,
+          "ebpf"
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/test",
+          514,
+          "测试"
+        ]
+      ],
+      "topFiles": [
+        [
+          "ubs-virt-enpu/vcann-rt/test/stub/runtime/rt.h",
+          176
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/test/testcase/utils/hash_map_test.cpp",
+          144
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/include/common.h",
+          76
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/core_limiter.c",
+          67
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/log.c",
+          60
+        ],
+        [
+          "virt-optimizer/ebpf/src/client/main.cpp",
+          54
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/test/testcase/npu_manager_test.cpp",
+          47
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/ascend/kernel.c",
+          46
+        ],
+        [
+          "virt-optimizer/ebpf/tests/common/test_command_parser.cpp",
+          41
+        ],
+        [
+          "virt-optimizer/ebpf/src/server/main_server.cpp",
+          41
+        ]
+      ],
+      "samples": [
+        "virt-optimizer/ebpf/src/optimizer/tuner/cluster_topo_tuner.h:31:7: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:32:32: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:39:48: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:39:49: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:42:50: code should be clang-formatted"
+      ],
+      "merged_at": ""
+    },
+    {
+      "id": "ubs-virt-191",
+      "name": "ubs-virt-191",
+      "repo": "ubs-virt",
+      "branch": "master",
+      "pr": "#159",
+      "prAuthor": "weixin_51621627",
+      "prSource": "master",
+      "trigger": "merge_request",
+      "buildNumber": 995,
+      "status": "fail",
+      "checkType": "clang-format",
+      "violations": 1811,
+      "affectedFiles": 158,
+      "srcViolations": 1811,
+      "testViolations": 0,
+      "conclusion": "clang-format 检查失败，ubs-virt-enpu 模块违规较多",
+      "recommendation": "重点关注 ubs-virt-enpu (1008处)、ubs-virt-enpu/vcann-rt (1008处)、virt-optimizer (761处)，建议统一运行 clang-format -i 批量修复",
+      "topDirs": [
+        [
+          "ubs-virt-enpu",
+          1008,
+          "ubs-virt-enpu"
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt",
+          1008,
+          "vcann-rt"
+        ],
+        [
+          "virt-optimizer",
+          761,
+          "virt-optimizer"
+        ],
+        [
+          "virt-optimizer/ebpf",
+          761,
+          "ebpf"
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/test",
+          514,
+          "测试"
+        ]
+      ],
+      "topFiles": [
+        [
+          "ubs-virt-enpu/vcann-rt/test/stub/runtime/rt.h",
+          176
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/test/testcase/utils/hash_map_test.cpp",
+          144
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/include/common.h",
+          76
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/core_limiter.c",
+          67
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/log.c",
+          60
+        ],
+        [
+          "virt-optimizer/ebpf/src/client/main.cpp",
+          54
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/test/testcase/npu_manager_test.cpp",
+          47
+        ],
+        [
+          "ubs-virt-enpu/vcann-rt/src/ascend/kernel.c",
+          46
+        ],
+        [
+          "virt-optimizer/ebpf/tests/common/test_command_parser.cpp",
+          41
+        ],
+        [
+          "virt-optimizer/ebpf/src/server/main_server.cpp",
+          41
+        ]
+      ],
+      "samples": [
+        "virt-optimizer/ebpf/src/optimizer/tuner/cluster_topo_tuner.h:31:7: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:32:32: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:39:48: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:39:49: code should be clang-formatted",
+        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:42:50: code should be clang-formatted"
       ],
       "merged_at": ""
     },
@@ -2246,393 +2269,297 @@ const reposData = {
         "ubs-virt-enpu/vcann-rt/src/include/hash_map.h:41:8: code should be clang-formatted"
       ],
       "merged_at": ""
-    },
-    {
-      "id": "ubs-virt-184",
-      "name": "ubs-virt-184",
-      "repo": "ubs-virt",
-      "branch": "master",
-      "pr": "#159",
-      "prAuthor": "weixin_51621627",
-      "prSource": "master",
-      "trigger": "note",
-      "buildNumber": 988,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 1811,
-      "affectedFiles": 158,
-      "srcViolations": 1811,
-      "testViolations": 0,
-      "conclusion": "clang-format 检查失败，ubs-virt-enpu 模块违规较多",
-      "recommendation": "重点关注 ubs-virt-enpu (1008处)、ubs-virt-enpu/vcann-rt (1008处)、virt-optimizer (761处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "ubs-virt-enpu",
-          1008,
-          "ubs-virt-enpu"
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt",
-          1008,
-          "vcann-rt"
-        ],
-        [
-          "virt-optimizer",
-          761,
-          "virt-optimizer"
-        ],
-        [
-          "virt-optimizer/ebpf",
-          761,
-          "ebpf"
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test",
-          514,
-          "测试"
-        ]
-      ],
-      "topFiles": [
-        [
-          "ubs-virt-enpu/vcann-rt/test/stub/runtime/rt.h",
-          176
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test/testcase/utils/hash_map_test.cpp",
-          144
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/include/common.h",
-          76
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/core_limiter.c",
-          67
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/log.c",
-          60
-        ],
-        [
-          "virt-optimizer/ebpf/src/client/main.cpp",
-          54
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test/testcase/npu_manager_test.cpp",
-          47
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/ascend/kernel.c",
-          46
-        ],
-        [
-          "virt-optimizer/ebpf/tests/common/test_command_parser.cpp",
-          41
-        ],
-        [
-          "virt-optimizer/ebpf/src/server/main_server.cpp",
-          41
-        ]
-      ],
-      "samples": [
-        "virt-optimizer/ebpf/src/optimizer/tuner/cluster_topo_tuner.h:31:7: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:32:32: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:39:48: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:39:49: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/qemu_isolate_tuner.h:42:50: code should be clang-formatted"
-      ],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-virt-174",
-      "name": "ubs-virt-174",
-      "repo": "ubs-virt",
-      "branch": "master",
-      "pr": "#160",
-      "prAuthor": "miaoyxm",
-      "prSource": "master",
-      "trigger": "note",
-      "buildNumber": 978,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 1774,
-      "affectedFiles": 157,
-      "srcViolations": 1774,
-      "testViolations": 0,
-      "conclusion": "clang-format 检查失败，ubs-virt-enpu 模块违规较多",
-      "recommendation": "重点关注 ubs-virt-enpu (971处)、ubs-virt-enpu/vcann-rt (971处)、virt-optimizer (761处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "ubs-virt-enpu",
-          971,
-          "ubs-virt-enpu"
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt",
-          971,
-          "vcann-rt"
-        ],
-        [
-          "virt-optimizer",
-          761,
-          "virt-optimizer"
-        ],
-        [
-          "virt-optimizer/ebpf",
-          761,
-          "ebpf"
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test",
-          512,
-          "测试"
-        ]
-      ],
-      "topFiles": [
-        [
-          "ubs-virt-enpu/vcann-rt/test/stub/runtime/rt.h",
-          176
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test/testcase/utils/hash_map_test.cpp",
-          144
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/include/common.h",
-          76
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/core_limiter.c",
-          67
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/log.c",
-          60
-        ],
-        [
-          "virt-optimizer/ebpf/src/client/main.cpp",
-          54
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/ascend/kernel.c",
-          46
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test/testcase/npu_manager_test.cpp",
-          46
-        ],
-        [
-          "virt-optimizer/ebpf/tests/common/test_command_parser.cpp",
-          41
-        ],
-        [
-          "virt-optimizer/ebpf/src/server/main_server.cpp",
-          41
-        ]
-      ],
-      "samples": [
-        "virt-optimizer/ebpf/src/optimizer/tuner/cpu_topo_tuner.cpp:14:1: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/cpu_topo_tuner.cpp:68:43: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/cpu_topo_tuner.cpp:68:44: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/cpu_topo_tuner.cpp:93:70: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/cpu_topo_tuner.cpp:109:45: code should be clang-formatted"
-      ],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-virt-169",
-      "name": "ubs-virt-169",
-      "repo": "ubs-virt",
-      "branch": "master",
-      "pr": "#179",
-      "prAuthor": "l30067380",
-      "prSource": "fix",
-      "trigger": "note",
-      "buildNumber": 973,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 2006,
-      "affectedFiles": 131,
-      "srcViolations": 2006,
-      "testViolations": 0,
-      "conclusion": "clang-format 检查失败，virt-awaresched 模块违规较多",
-      "recommendation": "重点关注 virt-awaresched (997处)、ubs-virt-enpu (886处)、ubs-virt-enpu/vcann-rt (886处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "virt-awaresched",
-          997,
-          "virt-awaresched"
-        ],
-        [
-          "ubs-virt-enpu",
-          886,
-          "ubs-virt-enpu"
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt",
-          886,
-          "vcann-rt"
-        ],
-        [
-          "virt-awaresched/test",
-          881,
-          "测试"
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test",
-          461,
-          "测试"
-        ]
-      ],
-      "topFiles": [
-        [
-          "virt-awaresched/test/vasd/api/test_api.cpp",
-          164
-        ],
-        [
-          "virt-awaresched/test/log/test_logger.cpp",
-          153
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test/testcase/utils/hash_map_test.cpp",
-          144
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test/stub/runtime/rt.h",
-          135
-        ],
-        [
-          "virt-awaresched/test/vasd/cluster_sched/test_cluster_sched.cpp",
-          135
-        ],
-        [
-          "virt-awaresched/test/cli/parser/test_vas_cli_parse.cpp",
-          113
-        ],
-        [
-          "virt-awaresched/test/vasd/arg_parse/test_arg_parse.cpp",
-          78
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/include/common.h",
-          76
-        ],
-        [
-          "virt-awaresched/test/util/test_string_util.cpp",
-          74
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/core_limiter.c",
-          63
-        ]
-      ],
-      "samples": [
-        "ubs-virt-ovs/src/services/urma/urma_service.h:129:61: code should be clang-formatted",
-        "virt-awaresched/src/vasd/acquire/libvirt_helper/libvirt_helper.cpp:94:111: code should be clang-formatted",
-        "virt-awaresched/src/vasd/acquire/libvirt_helper/libvirt_helper.cpp:629:17: code should be clang-formatted",
-        "virt-awaresched/src/vasd/acquire/libvirt_helper/libvirt_helper.cpp:629:64: code should be clang-formatted",
-        "ubs-virt-ovs/src/ipc/code/virt_ipc_code.h:17:34: code should be clang-formatted"
-      ],
-      "merged_at": ""
-    },
-    {
-      "id": "ubs-virt-167",
-      "name": "ubs-virt-167",
-      "repo": "ubs-virt",
-      "branch": "master",
-      "pr": "#178",
-      "prAuthor": "fanmingzhan",
-      "prSource": "master-clang-format",
-      "trigger": "note",
-      "buildNumber": 971,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 1689,
-      "affectedFiles": 157,
-      "srcViolations": 1689,
-      "testViolations": 0,
-      "conclusion": "clang-format 检查失败，ubs-virt-enpu 模块违规较多",
-      "recommendation": "重点关注 ubs-virt-enpu (886处)、ubs-virt-enpu/vcann-rt (886处)、virt-optimizer (761处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "ubs-virt-enpu",
-          886,
-          "ubs-virt-enpu"
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt",
-          886,
-          "vcann-rt"
-        ],
-        [
-          "virt-optimizer",
-          761,
-          "virt-optimizer"
-        ],
-        [
-          "virt-optimizer/ebpf",
-          761,
-          "ebpf"
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test",
-          461,
-          "测试"
-        ]
-      ],
-      "topFiles": [
-        [
-          "ubs-virt-enpu/vcann-rt/test/testcase/utils/hash_map_test.cpp",
-          144
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test/stub/runtime/rt.h",
-          135
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/include/common.h",
-          76
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/core_limiter.c",
-          63
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/log.c",
-          60
-        ],
-        [
-          "virt-optimizer/ebpf/src/client/main.cpp",
-          54
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/test/testcase/npu_manager_test.cpp",
-          46
-        ],
-        [
-          "virt-optimizer/ebpf/src/server/main_server.cpp",
-          41
-        ],
-        [
-          "virt-optimizer/ebpf/tests/common/test_command_parser.cpp",
-          41
-        ],
-        [
-          "ubs-virt-enpu/vcann-rt/src/include/core_limiter.h",
-          36
-        ]
-      ],
-      "samples": [
-        "virt-optimizer/ebpf/src/optimizer/tuner/halt_poll_tuner.h:17:1: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/halt_poll_tuner.h:37:71: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/halt_poll_tuner.h:37:72: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/tuner/halt_poll_tuner.h:47:7: code should be clang-formatted",
-        "virt-optimizer/ebpf/src/optimizer/util/file_reader.cpp:18:77: code should be clang-formatted"
-      ],
-      "merged_at": ""
     }
   ],
   "ubturbo": [
+    {
+      "id": "ubturbo-142",
+      "name": "ubturbo-142",
+      "repo": "ubturbo",
+      "branch": "master",
+      "pr": "#171",
+      "prAuthor": "fffsfsaf",
+      "prSource": "fix_bug",
+      "trigger": "merge_request",
+      "buildNumber": 774,
+      "status": "fail",
+      "checkType": "clang-format",
+      "violations": 9378,
+      "affectedFiles": 622,
+      "srcViolations": 8069,
+      "testViolations": 1309,
+      "conclusion": "clang-format 检查失败，plugins 模块违规较多",
+      "recommendation": "重点关注 plugins (7626处)、plugins/smap (5898处)、plugins/smap/test (5513处)，建议统一运行 clang-format -i 批量修复",
+      "topDirs": [
+        [
+          "plugins",
+          7626,
+          "plugins"
+        ],
+        [
+          "plugins/smap",
+          5898,
+          "smap"
+        ],
+        [
+          "plugins/smap/test",
+          5513,
+          "测试"
+        ],
+        [
+          "plugins/smap/test/depends",
+          3687,
+          "depends"
+        ],
+        [
+          "plugins/smap/test/depends/include",
+          2558,
+          "头文件"
+        ]
+      ],
+      "topFiles": [
+        [
+          "plugins/smap/test/depends/lib/maple_tree.c",
+          442
+        ],
+        [
+          "test/testcase/rmrs/ubturbo_plugin/test_rmrs_libvirt_module.cpp",
+          377
+        ],
+        [
+          "test/testcase/smap/client/test_smap_client.cpp",
+          302
+        ],
+        [
+          "plugins/smap/test/depends/include/linux/list.h",
+          252
+        ],
+        [
+          "plugins/smap/test/user/InterfaceTest.cpp",
+          227
+        ],
+        [
+          "plugins/rmrs/src/ubturbo_plugin/common/smap/rmrs_smap_module.cpp",
+          221
+        ],
+        [
+          "plugins/smap/test/ucache/linux_mock.h",
+          219
+        ],
+        [
+          "plugins/smap/test/depends/include/uapi/asm-generic/errno.h",
+          196
+        ],
+        [
+          "plugins/smap/test/depends/include/linux/maple_tree.h",
+          168
+        ],
+        [
+          "plugins/smap/test/depends/include/linux/compiler_types.h",
+          134
+        ]
+      ],
+      "samples": [
+        "plugins/smap/test/depends/include/linux/stat.h:3:22: code should be clang-formatted",
+        "plugins/smap/src/drivers/access_tracking.h:72:65: code should be clang-formatted",
+        "plugins/smap/test/depends/arch/arm64/mm/numa.c:2:1: code should be clang-formatted",
+        "plugins/smap/test/depends/arch/arm64/mm/numa.c:12:2: code should be clang-formatted",
+        "plugins/smap/test/depends/arch/arm64/mm/numa.c:13:59: code should be clang-formatted"
+      ],
+      "merged_at": ""
+    },
+    {
+      "id": "ubturbo-140",
+      "name": "ubturbo-140",
+      "repo": "ubturbo",
+      "branch": "master",
+      "pr": "#170",
+      "prAuthor": "jamesricado",
+      "prSource": "br_dev",
+      "trigger": "merge_request",
+      "buildNumber": 772,
+      "status": "fail",
+      "checkType": "clang-format",
+      "violations": 9370,
+      "affectedFiles": 622,
+      "srcViolations": 8061,
+      "testViolations": 1309,
+      "conclusion": "clang-format 检查失败，plugins 模块违规较多",
+      "recommendation": "重点关注 plugins (7618处)、plugins/smap (5890处)、plugins/smap/test (5505处)，建议统一运行 clang-format -i 批量修复",
+      "topDirs": [
+        [
+          "plugins",
+          7618,
+          "plugins"
+        ],
+        [
+          "plugins/smap",
+          5890,
+          "smap"
+        ],
+        [
+          "plugins/smap/test",
+          5505,
+          "测试"
+        ],
+        [
+          "plugins/smap/test/depends",
+          3687,
+          "depends"
+        ],
+        [
+          "plugins/smap/test/depends/include",
+          2558,
+          "头文件"
+        ]
+      ],
+      "topFiles": [
+        [
+          "plugins/smap/test/depends/lib/maple_tree.c",
+          442
+        ],
+        [
+          "test/testcase/rmrs/ubturbo_plugin/test_rmrs_libvirt_module.cpp",
+          377
+        ],
+        [
+          "test/testcase/smap/client/test_smap_client.cpp",
+          302
+        ],
+        [
+          "plugins/smap/test/depends/include/linux/list.h",
+          252
+        ],
+        [
+          "plugins/smap/test/user/InterfaceTest.cpp",
+          227
+        ],
+        [
+          "plugins/rmrs/src/ubturbo_plugin/common/smap/rmrs_smap_module.cpp",
+          221
+        ],
+        [
+          "plugins/smap/test/ucache/linux_mock.h",
+          219
+        ],
+        [
+          "plugins/smap/test/depends/include/uapi/asm-generic/errno.h",
+          196
+        ],
+        [
+          "plugins/smap/test/depends/include/linux/maple_tree.h",
+          168
+        ],
+        [
+          "plugins/smap/test/depends/include/linux/compiler_types.h",
+          134
+        ]
+      ],
+      "samples": [
+        "plugins/smap/test/depends/include/linux/stat.h:3:22: code should be clang-formatted",
+        "plugins/smap/src/drivers/access_tracking.h:72:65: code should be clang-formatted",
+        "plugins/smap/test/depends/arch/arm64/mm/numa.c:2:1: code should be clang-formatted",
+        "plugins/smap/test/depends/arch/arm64/mm/numa.c:12:2: code should be clang-formatted",
+        "plugins/smap/test/depends/arch/arm64/mm/numa.c:13:59: code should be clang-formatted"
+      ],
+      "merged_at": ""
+    },
+    {
+      "id": "ubturbo-138",
+      "name": "ubturbo-138",
+      "repo": "ubturbo",
+      "branch": "master",
+      "pr": "#161",
+      "prAuthor": "wsheng999",
+      "prSource": "master-cleancode",
+      "trigger": "merge_request",
+      "buildNumber": 770,
+      "status": "fail",
+      "checkType": "clang-format",
+      "violations": 9368,
+      "affectedFiles": 621,
+      "srcViolations": 8059,
+      "testViolations": 1309,
+      "conclusion": "clang-format 检查失败，plugins 模块违规较多",
+      "recommendation": "重点关注 plugins (7616处)、plugins/smap (5888处)、plugins/smap/test (5514处)，建议统一运行 clang-format -i 批量修复",
+      "topDirs": [
+        [
+          "plugins",
+          7616,
+          "plugins"
+        ],
+        [
+          "plugins/smap",
+          5888,
+          "smap"
+        ],
+        [
+          "plugins/smap/test",
+          5514,
+          "测试"
+        ],
+        [
+          "plugins/smap/test/depends",
+          3687,
+          "depends"
+        ],
+        [
+          "plugins/smap/test/depends/include",
+          2558,
+          "头文件"
+        ]
+      ],
+      "topFiles": [
+        [
+          "plugins/smap/test/depends/lib/maple_tree.c",
+          442
+        ],
+        [
+          "test/testcase/rmrs/ubturbo_plugin/test_rmrs_libvirt_module.cpp",
+          377
+        ],
+        [
+          "test/testcase/smap/client/test_smap_client.cpp",
+          302
+        ],
+        [
+          "plugins/smap/test/depends/include/linux/list.h",
+          252
+        ],
+        [
+          "plugins/smap/test/user/InterfaceTest.cpp",
+          227
+        ],
+        [
+          "plugins/rmrs/src/ubturbo_plugin/common/smap/rmrs_smap_module.cpp",
+          221
+        ],
+        [
+          "plugins/smap/test/ucache/linux_mock.h",
+          219
+        ],
+        [
+          "plugins/smap/test/depends/include/uapi/asm-generic/errno.h",
+          196
+        ],
+        [
+          "plugins/smap/test/depends/include/linux/maple_tree.h",
+          168
+        ],
+        [
+          "plugins/smap/test/depends/include/linux/compiler_types.h",
+          134
+        ]
+      ],
+      "samples": [
+        "src/include/turbo_module_ipc.h:35:2: code should be clang-formatted",
+        "src/include/turbo_module_ipc.h:36:7: code should be clang-formatted",
+        "plugins/smap/src/drivers/access_tracking.h:72:65: code should be clang-formatted",
+        "plugins/smap/test/depends/arch/arm64/include/asm/pgtable-hwdef.h:8:18: code should be clang-formatted",
+        "plugins/smap/test/depends/arch/arm64/include/asm/pgtable-hwdef.h:9:17: code should be clang-formatted"
+      ],
+      "merged_at": ""
+    },
     {
       "id": "ubturbo-129",
       "name": "ubturbo-129",
@@ -2918,294 +2845,6 @@ const reposData = {
         "plugins/smap/test/depends/arch/arm64/mm/numa.c:2:1: code should be clang-formatted",
         "plugins/smap/test/depends/arch/arm64/mm/numa.c:12:2: code should be clang-formatted",
         "plugins/smap/test/depends/arch/arm64/mm/numa.c:13:59: code should be clang-formatted"
-      ],
-      "merged_at": ""
-    },
-    {
-      "id": "ubturbo-120",
-      "name": "ubturbo-120",
-      "repo": "ubturbo",
-      "branch": "master",
-      "pr": "#161",
-      "prAuthor": "wsheng999",
-      "prSource": "master-cleancode",
-      "trigger": "note",
-      "buildNumber": 752,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 9401,
-      "affectedFiles": 617,
-      "srcViolations": 8092,
-      "testViolations": 1309,
-      "conclusion": "clang-format 检查失败，plugins 模块违规较多",
-      "recommendation": "重点关注 plugins (7649处)、plugins/smap (5921处)、plugins/smap/test (5578处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "plugins",
-          7649,
-          "plugins"
-        ],
-        [
-          "plugins/smap",
-          5921,
-          "smap"
-        ],
-        [
-          "plugins/smap/test",
-          5578,
-          "测试"
-        ],
-        [
-          "plugins/smap/test/depends",
-          3687,
-          "depends"
-        ],
-        [
-          "plugins/smap/test/depends/include",
-          2558,
-          "头文件"
-        ]
-      ],
-      "topFiles": [
-        [
-          "plugins/smap/test/depends/lib/maple_tree.c",
-          442
-        ],
-        [
-          "test/testcase/rmrs/ubturbo_plugin/test_rmrs_libvirt_module.cpp",
-          377
-        ],
-        [
-          "test/testcase/smap/client/test_smap_client.cpp",
-          302
-        ],
-        [
-          "plugins/smap/test/depends/include/linux/list.h",
-          252
-        ],
-        [
-          "plugins/smap/test/user/InterfaceTest.cpp",
-          227
-        ],
-        [
-          "plugins/rmrs/src/ubturbo_plugin/common/smap/rmrs_smap_module.cpp",
-          221
-        ],
-        [
-          "plugins/smap/test/ucache/linux_mock.h",
-          219
-        ],
-        [
-          "plugins/smap/test/depends/include/uapi/asm-generic/errno.h",
-          196
-        ],
-        [
-          "plugins/smap/test/depends/include/linux/maple_tree.h",
-          168
-        ],
-        [
-          "plugins/smap/test/depends/include/linux/compiler_types.h",
-          134
-        ]
-      ],
-      "samples": [
-        "src/include/turbo_module_ipc.h:35:2: code should be clang-formatted",
-        "src/include/turbo_module_ipc.h:36:7: code should be clang-formatted",
-        "plugins/smap/src/drivers/access_tracking.h:72:65: code should be clang-formatted",
-        "plugins/smap/test/depends/arch/arm64/include/asm/pgtable-hwdef.h:8:18: code should be clang-formatted",
-        "plugins/smap/test/depends/arch/arm64/include/asm/pgtable-hwdef.h:9:17: code should be clang-formatted"
-      ],
-      "merged_at": ""
-    },
-    {
-      "id": "ubturbo-114",
-      "name": "ubturbo-114",
-      "repo": "ubturbo",
-      "branch": "master",
-      "pr": "#168",
-      "prAuthor": "woquzhao12138",
-      "prSource": "br_huge_vm_strategy_mr1",
-      "trigger": "merge_request",
-      "buildNumber": 746,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 9408,
-      "affectedFiles": 618,
-      "srcViolations": 8099,
-      "testViolations": 1309,
-      "conclusion": "clang-format 检查失败，plugins 模块违规较多",
-      "recommendation": "重点关注 plugins (7656处)、plugins/smap (5928处)、plugins/smap/test (5577处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "plugins",
-          7656,
-          "plugins"
-        ],
-        [
-          "plugins/smap",
-          5928,
-          "smap"
-        ],
-        [
-          "plugins/smap/test",
-          5577,
-          "测试"
-        ],
-        [
-          "plugins/smap/test/depends",
-          3687,
-          "depends"
-        ],
-        [
-          "plugins/smap/test/depends/include",
-          2558,
-          "头文件"
-        ]
-      ],
-      "topFiles": [
-        [
-          "plugins/smap/test/depends/lib/maple_tree.c",
-          442
-        ],
-        [
-          "test/testcase/rmrs/ubturbo_plugin/test_rmrs_libvirt_module.cpp",
-          377
-        ],
-        [
-          "test/testcase/smap/client/test_smap_client.cpp",
-          302
-        ],
-        [
-          "plugins/smap/test/depends/include/linux/list.h",
-          252
-        ],
-        [
-          "plugins/smap/test/user/InterfaceTest.cpp",
-          227
-        ],
-        [
-          "plugins/rmrs/src/ubturbo_plugin/common/smap/rmrs_smap_module.cpp",
-          221
-        ],
-        [
-          "plugins/smap/test/ucache/linux_mock.h",
-          219
-        ],
-        [
-          "plugins/smap/test/depends/include/uapi/asm-generic/errno.h",
-          196
-        ],
-        [
-          "plugins/smap/test/depends/include/linux/maple_tree.h",
-          168
-        ],
-        [
-          "plugins/smap/test/depends/include/linux/compiler_types.h",
-          134
-        ]
-      ],
-      "samples": [
-        "plugins/smap/test/depends/include/linux/stat.h:3:22: code should be clang-formatted",
-        "plugins/smap/src/drivers/access_tracking.h:72:65: code should be clang-formatted",
-        "plugins/smap/test/depends/arch/arm64/mm/numa.c:2:1: code should be clang-formatted",
-        "plugins/smap/test/depends/arch/arm64/mm/numa.c:12:2: code should be clang-formatted",
-        "plugins/smap/test/depends/arch/arm64/mm/numa.c:13:59: code should be clang-formatted"
-      ],
-      "merged_at": ""
-    },
-    {
-      "id": "ubturbo-112",
-      "name": "ubturbo-112",
-      "repo": "ubturbo",
-      "branch": "master",
-      "pr": "#167",
-      "prAuthor": "jianzilin2025",
-      "prSource": "br_bugfix",
-      "trigger": "note",
-      "buildNumber": 744,
-      "status": "fail",
-      "checkType": "clang-format",
-      "violations": 9354,
-      "affectedFiles": 617,
-      "srcViolations": 8045,
-      "testViolations": 1309,
-      "conclusion": "clang-format 检查失败，plugins 模块违规较多",
-      "recommendation": "重点关注 plugins (7602处)、plugins/smap (5874处)、plugins/smap/test (5523处)，建议统一运行 clang-format -i 批量修复",
-      "topDirs": [
-        [
-          "plugins",
-          7602,
-          "plugins"
-        ],
-        [
-          "plugins/smap",
-          5874,
-          "smap"
-        ],
-        [
-          "plugins/smap/test",
-          5523,
-          "测试"
-        ],
-        [
-          "plugins/smap/test/depends",
-          3686,
-          "depends"
-        ],
-        [
-          "plugins/smap/test/depends/include",
-          2558,
-          "头文件"
-        ]
-      ],
-      "topFiles": [
-        [
-          "plugins/smap/test/depends/lib/maple_tree.c",
-          442
-        ],
-        [
-          "test/testcase/rmrs/ubturbo_plugin/test_rmrs_libvirt_module.cpp",
-          377
-        ],
-        [
-          "test/testcase/smap/client/test_smap_client.cpp",
-          302
-        ],
-        [
-          "plugins/smap/test/depends/include/linux/list.h",
-          252
-        ],
-        [
-          "plugins/smap/test/user/InterfaceTest.cpp",
-          227
-        ],
-        [
-          "plugins/rmrs/src/ubturbo_plugin/common/smap/rmrs_smap_module.cpp",
-          221
-        ],
-        [
-          "plugins/smap/test/ucache/linux_mock.h",
-          219
-        ],
-        [
-          "plugins/smap/test/depends/include/uapi/asm-generic/errno.h",
-          196
-        ],
-        [
-          "plugins/smap/test/depends/include/linux/maple_tree.h",
-          168
-        ],
-        [
-          "plugins/smap/test/depends/include/linux/compiler_types.h",
-          134
-        ]
-      ],
-      "samples": [
-        "src/include/turbo_module_ipc.h:35:2: code should be clang-formatted",
-        "src/include/turbo_module_ipc.h:36:7: code should be clang-formatted",
-        "plugins/smap/src/drivers/access_tracking.h:72:65: code should be clang-formatted",
-        "plugins/smap/test/depends/arch/arm64/include/asm/page_no.h:5:1: code should be clang-formatted",
-        "plugins/smap/test/depends/arch/arm64/include/asm/page_no.h:17:25: code should be clang-formatted"
       ],
       "merged_at": ""
     }
