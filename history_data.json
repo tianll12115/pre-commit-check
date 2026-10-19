@@ -2,15 +2,15 @@
   "ubs-engine": [],
   "ubs-comm": [
     {
-      "id": "ubs-comm-4119",
-      "name": "ubs-comm-4119",
+      "id": "ubs-comm-4120",
+      "name": "ubs-comm-4120",
       "repo": "ubs-comm",
       "branch": "master",
       "pr": "#1101",
       "prAuthor": "panhengzhi",
       "prSource": "0921capi",
       "trigger": "merge_request",
-      "buildNumber": 4341,
+      "buildNumber": 4342,
       "status": "skip",
       "checkType": "未配置 pre-commit",
       "violations": 0,
